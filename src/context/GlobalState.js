@@ -6,12 +6,7 @@ import AppReducer from './AppReducer.js';
 
 //initial state
 const initialState = {
-    transactions: [
-        { id: 1, description: "Project 1 Income", transactionAmount: 10000 },
-        { id: 2, description: "Project 2 Income", transactionAmount: 20000 },
-        { id: 3, description: "Project 1 Salary", transactionAmount: -5000 },
-        { id: 4, description: "Project 2 Salary", transactionAmount: -10000 }
-    ]
+    transactions: []
 }
 
 //Global Context 
@@ -23,7 +18,7 @@ export const GlobalProvider = ({ children }) => {
 
     // Actions for Transactions
 
-        // Delete Existing Transaction Action
+        // Delete Existing Transaction 
         function delTransaction(id) {
             dispatch({
                 type: 'DELETE_TRANSACTION',
@@ -31,7 +26,7 @@ export const GlobalProvider = ({ children }) => {
             });
         }
 
-        // Add New Transaction Action
+        // Add New Transaction 
         function addTransaction(transaction) {
             dispatch({
                 type: 'ADD_TRANSACTION',
