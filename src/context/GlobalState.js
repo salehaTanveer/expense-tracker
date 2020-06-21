@@ -1,4 +1,7 @@
-import React , {createContext , userReducer } from 'react';
+import React , {createContext , useReducer } from 'react';
+
+//import App Reducer
+import AppReducer from './AppReducer.js';
 
 
 //initial state
@@ -16,7 +19,8 @@ export const GlobalContext = createContext(initialState);
 
 //provider for Global Context 
 export const GlobalProvider = ({ children }) => {
-    const [ state, dispath ] = userReducer(AppReducer , initialState);
+
+    const [state ,dispatch] = useReducer(AppReducer, initialState);
 
     return(
         <GlobalContext.Provider value= {
