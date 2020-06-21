@@ -12,9 +12,12 @@ import { GlobalProvider } from './context/GlobalState.js'
 function App() {
   return (
     <GlobalProvider>
+      <hr />
       <Header />
+      <hr />
       <div className="container">
         <Balance />
+        <hr />
         <AccountSummary />
         <TransactionHistory />
         <AddTransaction /> 
