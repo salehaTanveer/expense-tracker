@@ -15,7 +15,7 @@
 body {
   background-image: var(--Bg-image) ;
   background-repeat: no-repeat; 
-  background-position: absolute;
+  background-position: fixed;
   background-size: cover;
   background-color: #0c6e75;
   
