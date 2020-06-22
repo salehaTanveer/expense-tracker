@@ -4,7 +4,7 @@
 
 :root {
   --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  --Bg-image : URL('https://cdnb.artstation.com/p/assets/images/images/003/733/761/large/mark-kirkpatrick-mk-landscape-01.jpg?1476919494')
+  --Bg-image : URL('https://cdn.leverageedu.com/blog/wp-content/uploads/2020/03/16161305/Scope-of-Financial-Management.png')
 }
 
 * {
@@ -16,7 +16,8 @@ body {
   background-image: var(--Bg-image) ;
    background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: inherit;
+  background-position: center;
+  background-size: 100%;
   
   margin: 0;
   display: flex;
@@ -30,10 +31,14 @@ body {
 
 .container {
   margin: 30px auto;
-  width: 350px;
+  width: 500px;
+  background-color: #ffffffcc;
+  padding: 50px;
+  padding-bottom: 10px;
 }
 
 h1 {
+  background-color: rgba(255, 255, 255, 0.596);
   letter-spacing: 1px;
   margin: 0;
   text-align: center;
